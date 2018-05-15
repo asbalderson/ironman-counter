@@ -32,7 +32,7 @@ setup(
     url=METADATA['__url__'],
     license=METADATA['__license__'],
     packages=find_packages('.'),
-    install_requirements=REQUIREMENTS,
+    install_requires=REQUIREMENTS,
     zip_safe=True,
     entry_points={
         'console_scripts': ['%s=%s.__main__:main' % (NAME, NAME)]
