@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 
-"""
-setup and configuration
-"""
+"""setup and configuration"""
 
 import os
 from setuptools import setup
@@ -37,7 +35,7 @@ setup(
     entry_points={
         'console_scripts': ['%s=%s.__main__:main' % (NAME, NAME)]
     },
-    classifiers=(
+    classifiers=[
         'Development Status :: 1 - Planning',
         'Environment :: Console',
         'Intended Audience :: Developers',
@@ -47,5 +45,5 @@ setup(
         'Programming Language :: Python :: 3 :: Only',
         'Topic :: Software Development :: Build Tools',
         'Topic :: Utilities',
-    )
+    ]
 )
