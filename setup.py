@@ -7,7 +7,7 @@ from setuptools import setup
 from setuptools import find_packages
 
 
-NAME = 'my_package'
+NAME = 'ironman'
 PWD = os.path.abspath(os.path.dirname(__name__))
 
 METADATA_FILE = os.path.join(PWD, NAME, '__init__.py')
