@@ -1,9 +1,10 @@
 from . import DB
 
 
-class Player(DB.model):
+class Player(DB.Model):
     __tablename__ = 'player'
-    playerid = DB.Column(DB.integer, nullable=False, primarykey=True)
-    wins = DB.Column(DB.integer, nullable=False, default=0)
-    tournyid = DB.Column(DB.integer, DB.ForeignKey('tourny.tournyid'),
+    id = DB.Column(DB.Integer, nullable=False, primary_key=True)
+    playerid = DB.Column(DB.Integer, nullable=False)
+    wins = DB.Column(DB.Integer, nullable=False, default=0)
+    tournyid = DB.Column(DB.Integer, DB.ForeignKey('tourny.tournyid'),
                          nullable=False)
